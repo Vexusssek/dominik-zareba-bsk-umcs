@@ -1,6 +1,6 @@
 # dominik-zareba-bsk-umcs
 
-#ZAD1 (bez zastosowania serwera - symulacja)
+# ZAD1 (bez zastosowania serwera - symulacja)
 
 ```
 # simulate_md5.py
