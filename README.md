@@ -1,6 +1,6 @@
 # dominik-zareba-bsk-umcs
 
-# ZAD1 (bez zastosowania serwera - symulacja) oraz wersja z serwerem
+# ZAD 1.1 (bez zastosowania serwera - symulacja) oraz wersja z serwerem
 
 ## bez serwera
 ```
@@ -45,4 +45,37 @@ curl -X POST http://127.0.0.1:10001/submit \
 ```
 
 <mark> MD5 </mark>
- : algorytm kryptograficzny, który z dowolnego długości słowa generuje 128-bitowy skrót.
+ : funkcja haszująca, która z dowolnego długości słowa generuje 128-bitowy skrót. Szybki, ale nieodporny na kolizje. Złamany - niezalecany do zastosowań bezpieczeństwa
+
+ # ZAD 1.2
+ W tym przypadku proces będzie identyczny jak w poprzednim zadaniu - zmieniamy tylko algorytm na SHA-256
+
+ 1. Pobieramy słowo
+
+```
+curl http://127.0.0.1:10002/hash
+```
+
+2. Obliczamy SHA-256
+
+```
+echo -n 'randomword' | openssl dgst -sha256
+# lub: echo -n 'randomword' | openssl sha256
+```
+
+3. Odpowiedź do serwera w json
+
+```
+echo -n 'randomword' | openssl dgst -sha256
+# lub: echo -n 'randomword' | openssl sha256
+```
+<mark> SHA-256 </mark> - funkcja haszująca generująca 256-bitowy skrót. Obecnie uznawana za bezpieczną. Jest szybka, więc nieoptymalna do przechowywania haseł.
+
+# ZAD 1.3
+Tutaj proces się powtarza, ale zamieniamy SHA256 z SHA512
+
+```
+echo -n 'randomword' | openssl dgst -sha512
+```
+
+# ZAD 1.4
