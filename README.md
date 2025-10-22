@@ -44,5 +44,5 @@ curl -X POST http://127.0.0.1:10001/submit \
   -d '{"session_id":"abc123","hash":"5eb63bbbe01eeed093cb22bb8f5acdc3"}'
 ```
 
-==MD5==
+<mark> MD5 </mark>
 : algorytm kryptograficzny, który z dowolnego długości słowa generuje 128-bitowy skrót.
