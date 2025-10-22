@@ -45,4 +45,4 @@ curl -X POST http://127.0.0.1:10001/submit \
 ```
 
 <mark> MD5 </mark>
-: algorytm kryptograficzny, który z dowolnego długości słowa generuje 128-bitowy skrót.
+ : algorytm kryptograficzny, który z dowolnego długości słowa generuje 128-bitowy skrót.
